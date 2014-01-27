@@ -17,7 +17,6 @@ escapeChars :: [T.Text] -- meta chars
 escapeChars [] inputText = inputText
 escapeChars (m:ms) inputText = escapeChars ms $ escapeMetaChar inputText m
 
-
 escapeMetaChar :: T.Text -- input text
                -> T.Text -- Character to search for
                -> T.Text -- Returned text with characters escaped
